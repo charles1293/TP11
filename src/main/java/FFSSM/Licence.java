@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @(#) LicencePlongeur.java
  */
 package FFSSM;
@@ -28,10 +28,10 @@ public class Licence {
     }
 
     /**
-     * Est-ce que la licence est valide à la date indiquée ?
-     * Une licence est valide pendant un an à compter de sa date de délivrance
-     * @param d la date à tester
-     * @return vrai si valide à la date d
+     * Est-ce que la licence est valide a la date indiquee ?
+     * Une licence est valide pendant un an a compter de sa date de delivrance
+     * @param d la date a tester
+     * @return vrai si valide a la date d
      **/
     public boolean estValide(LocalDate d) {
         return !d.isAfter(delivrance.plusYears(1));
